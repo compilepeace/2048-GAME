@@ -1,3 +1,5 @@
+# Description : This module contains all the constants used during development of UI in (main.py)
+
 
 # Screen Size, board length and padding between cells
 SIZE = 400
@@ -6,8 +8,8 @@ GRID_PADDING = 10
 
 
 # Game background color and an empty cell's background color
-BACKGROUND_COLOR_GAME =  '#7B7D7D' #'#707B7C'
-BACKGROUND_COLOR_CELL_EMPTY = '#979A9A'#'#B3B6B7'#AEB6BF'
+BACKGROUND_COLOR_GAME =  '#7B7D7D' 
+BACKGROUND_COLOR_CELL_EMPTY = '#979A9A'
 
 
 BACKGROUND_COLOR_DICT = { 	2: "#E8DAEF", 4: "#cccccc", 8: "#f0a500",
@@ -20,6 +22,8 @@ CELL_COLOR_DICT = {	2: "#4D5656", 4: "#4D5656", 8: "#F7F9F9",
 					128: "#F7F9F9", 256: "#F7F9F9", 512: "#F7F9F9",
 					1024: "#F7F9F9", 2048: "#F7F9F9", }
 
+BACKGROUND_COLOR_END = "#000000"
+FOREGROUND_COLOR_END = "#FFFFFF"
 
 FONT = ("Verdana", 40, "bold")
 

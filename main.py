@@ -1,3 +1,7 @@
+# Author: Abhinav Thakur
+# Email : compilepeace@gmail.com
+# Description: It is the main script that runs the game, calling logics and managing UI for the game. 
+
 import sys
 
 interpreter = sys.executable.split('/')[-1]
@@ -132,15 +136,19 @@ class Game2048(Frame, GameLogics):
 				game_state = self.getCurrentState()	# <2.2.4>
 				if game_state == 'WON':					# <2.2.4.1>
 					self.grid_cells[1][1].configure(text = 'YOU', 
-													bg = const.BACKGROUND_COLOR_CELL_EMPTY) 
+													bg = const.BACKGROUND_COLOR_END,
+													fg = const.FOREGROUND_COLOR_END) 
 					self.grid_cells[2][2].configure(text = 'WON',
-													bg = const.BACKGROUND_COLOR_CELL_EMPTY)
+													bg = const.BACKGROUND_COLOR_END,
+													fg = const.FOREGROUND_COLOR_END)
 
 				if game_state == 'LOST':				# <2.2.4.2>
 					self.grid_cells[1][1].configure(text = 'YOU', 
-													bg = const.BACKGROUND_COLOR_CELL_EMPTY)
+													bg = const.BACKGROUND_COLOR_END,
+													fg = const.FOREGROUND_COLOR_END)
 					self.grid_cells[2][2].configure(text = 'LOST',
-													bg = const.BACKGROUND_COLOR_CELL_EMPTY)
+													bg = const.BACKGROUND_COLOR_END,
+													fg = const.FOREGROUND_COLOR_END)
 
 game = Game2048()
 	

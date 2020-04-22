@@ -1,3 +1,7 @@
+# Author: Abhinav Thakur
+# Email : compilepeace@gmail.com
+# Description: This module contains all the logics involved in 2048-game
+
 import random
 
 
@@ -174,23 +178,4 @@ class GameLogics:
 				return 'NOT YET OVER'
 
 		return 'LOST'
-
-	
-	#def printMatrix(self, mat):
-	#	print('-' * 10)
-	#	for i in range(4):
-	#		for j in range(4):
-	#			print(str(mat[i][j]), end = ' ')
-	#		print()
-	#
-	#	print('-' * 10)
-
-
-	#def test(self):
-	#	self.printMatrix(self.board)
-	#	new_matrix, changed = self.moveRight()
-	#	self.printMatrix(new_matrix)
-	#	print(changed)
-
-
 
